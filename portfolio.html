@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Fadipe Ayomide | Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-code"></i> Ayomide
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>My Projects: Built and Ongoing</p>
+        </div>
+    </section>
+
+    <!-- ==================== FILTER BUTTONS ==================== -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="website">Websites</button>
+            <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            <button class="filter-btn" data-filter="church">Church</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO GRID ==================== -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1: Redemption Church -->
+                <div class="portfolio-item" data-category="church">
+                    <div class="portfolio-image">
+                        <img src="project1.jpg" alt="Redemption Church Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Redemption Church Website</h3>
+                                <p>Modern church website with event management and member portal</p>
+                                <div class="portfolio-links">
+                                    <a href="#project-modal-1" class="btn btn-small project-modal-trigger">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Redemption Church Website</h3>
+                        <p>Church Website | 2024</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Tech Solutions Business -->
+                <div class="portfolio-item" data-category="business">
+                    <div class="portfolio-image">
+                        <img src="project2.jpg" alt="Tech Solutions Business Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Tech Solutions Website</h3>
+                                <p>Professional business website with contact forms and service showcase</p>
+                                <div class="portfolio-links">
+                                    <a href="#project-modal-2" class="btn btn-small project-modal-trigger">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Tech Solutions Website</h3>
+                        <p>Business Website | 2024</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Fashion Store E-commerce -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="project3.jpg" alt="Fashion Store E-commerce">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Fashion Store E-commerce</h3>
+                                <p>Full-featured online store with product catalog and shopping cart</p>
+                                <div class="portfolio-links">
+                                    <a href="#project-modal-3" class="btn btn-small project-modal-trigger">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Fashion Store E-commerce</h3>
+                        <p>E-commerce | 2024</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Real Estate Website -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-image">
+                        <img src="project4.jpg" alt="Real Estate Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Real Estate Website</h3>
+                                <p>Property listing website with search and filter functionality</p>
+                                <div class="portfolio-links">
+                                    <a href="#project-modal-4" class="btn btn-small project-modal-trigger">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Real Estate Website</h3>
+                        <p>Website | 2024</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Grace Chapel Church -->
+                <div class="portfolio-item" data-category="church">
+                    <div class="portfolio-image">
+                        <img src="images/project1.jpg" alt="Grace Chapel Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Grace Chapel Website</h3>
+                                <p>Church website with online giving and sermon archives</p>
+                                <div class="portfolio-links">
+                                    <a href="#project-modal-5" class="btn btn-small project-modal-trigger">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Grace Chapel Website</h3>
+                        <p>Church Website | 2024</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Books & Media Store -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="images/project2.jpg" alt="Books & Media Store">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Books & Media Store</h3>
+                                <p>Online bookstore with search, reviews, and wishlist features</p>
+                                <div class="portfolio-links">
+                                    <a href="#project-modal-6" class="btn btn-small project-modal-trigger">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Books & Media Store</h3>
+                        <p>E-commerce | 2024</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Restaurant Website -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-image">
+                        <img src="images/project3.jpg" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Restaurant Website</h3>
+                                <p>Restaurant website with menu, reservations, and online ordering</p>
+                                <div class="portfolio-links">
+                                    <a href="#project-modal-7" class="btn btn-small project-modal-trigger">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Restaurant Website</h3>
+                        <p>Website | 2024</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Fashion Boutique E-commerce -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="images/project4.jpg" alt="Fashion Boutique E-commerce">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Fashion Boutique Store</h3>
+                                <p>Premium fashion store with advanced filtering and recommendations</p>
+                                <div class="portfolio-links">
+                                    <a href="#project-modal-8" class="btn btn-small project-modal-trigger">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </a>
+                                    <a href="https://example.com" target="_blank" class="btn btn-small">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Fashion Boutique Store</h3>
+                        <p>E-commerce | 2024</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO STATS ==================== -->
+    <section class="portfolio-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stats-item">
+                    <h3>8+</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stats-item">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stats-item">
+                    <h3>6+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stats-item">
+                    <h3>2+</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECT CATEGORIES INFO ==================== -->
+    <section class="project-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Types of Projects I Build</h2>
+                <p class="section-subtitle">Here's what I specialize in</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-church"></i>
+                    <h3>Church Websites</h3>
+                    <p>Modern websites for churches with event management, sermon archives, and member portals.</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Business Websites</h3>
+                    <p>Professional websites for businesses including service showcases and contact forms.</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-commerce Stores</h3>
+                    <p>Full-featured online stores with product catalogs, shopping carts, and payment integration.</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Portfolio Websites</h3>
+                    <p>Creative portfolio websites for artists, designers, and professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta">
+        <div class="container">
+            <h2>Impressed With My Work?</h2>
+            <p>Let's discuss how I can help your business succeed online</p>
+            <a href="contact.html" class="btn btn-light">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fadipe Ayomide</h4>
+                    <p>Web Developer | Building Websites for Businesses & Churches</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>
+                            <a href="mailto:fadipeayomide17@gmail.com">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/2349033212713" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/fadipe-ayomide-oo1" target="_blank">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://twitter.com" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fadipe-ayomide-oo1" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fadipe Ayomide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="js/script.js"></script>
+</body>
+</html>
