@@ -5,4 +5,4 @@ Disallow: /admin/
 
 Crawl-delay: 1
 
-Sitemap: https://fadipe-ayomide.netlify.app/sitemap.xml
+Sitemap: https://fadipe-ayomide-j.netlify.app/sitemap.xml
