@@ -3,6 +3,5 @@ Allow: /
 Disallow: /private/
 Disallow: /admin/
 
-Crawl-delay: 1
 
 Sitemap: https://fadipe-ayomide-j.vercel.app/sitemap.xml
