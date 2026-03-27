@@ -36,10 +36,4 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    <url>
-        <loc>https://fadipe-ayomide-j.vercel.app/thank-you.html</loc>
-        <lastmod>2026-03-27</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
 </urlset>
